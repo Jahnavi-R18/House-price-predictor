@@ -12,7 +12,7 @@ model.fit(X_size, y_price)
 def predict_price(house_size):
     input_data = np.array([[house_size]])
     prediction = model.predict(input_data)
-    final_price = round(prediction[0], 2) # Extracts the raw numeric value
+    final_price = round(prediction[0], 2)
     return f"Estimated Valuation: ₹{final_price} Lakhs"
 
 interface = gr.Interface(
