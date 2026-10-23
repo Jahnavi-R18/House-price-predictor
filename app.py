@@ -19,7 +19,7 @@ interface = gr.Interface(
     fn=predict_price,
     inputs=gr.Slider(500, 2000, value=1000, label="House Area (Square Feet)"),
     outputs=gr.Textbox(label="AI Predicted Price"),
-    title="🏠 Simple House Price Predictor",
+    title="Simple House Price Predictor",
     description="Move the slider to predict house prices using a simple Linear Regression model."
 )
 
